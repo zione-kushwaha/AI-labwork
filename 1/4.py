@@ -1,14 +1,18 @@
-# Wap to display the prime numbers 1 to 100
-from math import ceil, sqrt
+# WAP to display prime numbers from 1 to 100
 
-def list_primes(n1, n2):
-    for num in range(n1, n2):
-        flag = 0
-        for i in range(2, ceil(sqrt(num)) ):
-            if num % i == 0:
-                flag = 1
-                break
-        if flag == 0 and num > 1:
-            print(num,end=' ')
+# here i am using the most efficient algorithm saive of eratosethenes
 
-list_primes(1, 101)
+def prime_number(n):
+   
+    prime = (n+1)*[True]
+    p = 2
+    while p*p <= n:
+        if prime[p]:
+            for i in range(p*p, n+1, p):
+                prime[i] = False
+        p += 1
+    for i in range(2, n+1):
+        if prime[i]:
+            print(i, end=' ');
+
+prime_number(100);

@@ -1,7 +1,5 @@
 def display_division(percentage):
-    """
-     Your Grade is
-    """
+    "Your grade is "
     if percentage >= 80:
         print("Distinction")
     elif percentage >= 60:

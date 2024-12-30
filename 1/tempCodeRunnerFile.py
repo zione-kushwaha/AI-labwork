@@ -1,1 +1,0 @@
-print('grater ', sum_list(arr)[1])

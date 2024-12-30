@@ -1,9 +1,7 @@
 # Wap to calculate the sum, diff, prduct and quotient between two input numbers using a single function
 
 def calculate_operations(a, b):
-    """
-      Performing the operation 
-    """
+    'calculating the sum, diff,mul, divide'
     if b != 0:
         quotient = a / b
     else:
