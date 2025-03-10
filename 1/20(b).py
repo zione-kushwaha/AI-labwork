@@ -6,7 +6,7 @@ def print_graph(graph):
             print(f"{node} -> {adjacent} (cost: {graph[node][adjacent]})")
 
 graph = {
-    'biratnagar': {'ithari': 22, 'rangeli': 25, 'dharan': 20},
+    'biratnagar': {'ithari': 22, 'rangeli': 25, 'biratchowk': 30},
     'ithari': {'Dharan': 20, 'biratchowk': 11},
     'dharan': {},
     'rangeli': {'khanepokhari': 25, 'ulabari': 40},
